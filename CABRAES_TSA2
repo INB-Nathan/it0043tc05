@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>IT0043-TC05_TSA2</title>
+    </head>
+    <body>
+        <center>
+        <h1>POKEMON ENTRY</h1>
+        <form>
+            <label for="Ndex">National Dex:</label><br>
+            <input type="number" min="0" id="Ndex" name="Ndex"><br>
+            <input type="radio" id="number" name="Generation" value="Gen1">
+            <label for="Gen1">Gen 1</label>
+            <input type="radio" id="Gen1" name="Generation" value="Gen1">
+            <label for="Gen2">Gen 2</label>
+            <input type="radio" id="Gen2" name="Generation" value="Gen2">
+            <label for="Gen3">Gen 3</label>
+            <input type="radio" id="Gen3" name="Generation" value="Gen3">
+            <label for="Gen4">Gen 4</label>
+            <input type="radio" id="Gen4" name="Generation" value="Gen4">
+            <label for="Gen5">Gen 5</label>
+            <input type="radio" id="Gen5" name="Generation" value="Gen5">
+            <label for="Gen6">Gen 6</label>
+            <input type="radio" id="Gen6" name="Generation" value="Gen6">
+            <label for="Gen7">Gen 7</label>
+            <input type="radio" id="Gen7" name="Generation" value="Gen7">
+            <label for="Gen8">Gen 8</label>
+            <input type="radio" id="Gen8" name="Generation" value="Gen8">
+            <label for="Gen9">Gen 9</label><br>
+            <label for="lname">Pokemon Name:</label><br>
+            <input type="text" id="Pname" name="Pname"><br>
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image"><br>
+            <label for="type1">Type 1:</label>
+            <input list="types" name="type1" id="type1">
+            <label for="type2">Type 2:</label>
+            <input list="types" name="type2" id="type2"><br>
+            <label for="Evolvesfrom">Evolves from:</label>
+            <input type="text" id="Evolvesfrom" name="Evolvesfrom">
+            <label for="Evolvesto">Evolves to:</label>
+            <input type="text" id="Evolvesto" name="Evolvesto"><br>
+            <label for="Nname">Nickname:</label>
+            <input type="text" id="Nname" name="Nname">
+            <label for="Bday">Birthday:</label>
+            <input type="date" id="Bday" name="Bday"><br>
+            <input type="submit" id="submit" name="submit">
+        </center>
+            <datalist id="types">
+            <option value="Bug">
+            <option value="Dark">
+            <option value="Dragon">
+            <option value="Electric">
+            <option value="Fairy">
+            <option value="Fighting">
+            <option value="Fire">
+            <option value="Flying">
+            <option value="Ghost">
+            <option value="Grass">
+            <option value="Ground">
+            <option value="Ice">
+            <option value="Normal">
+            <option value="Poison">
+            <option value="Psychic">
+            <option value="Rock">
+            <option value="Steel">
+            <option value="Water">
+            </datalist>
+        </form>
+        <h1 align="center"> POKEMON TABLE </h1>
+        <table border="2px" width="1000px">
+            <tr>
+                <th>
+                    National Dex
+                </th>
+                <th>
+                    Generation
+                </th>
+                <th>
+                    Pokemon Name
+                </th>
+                <th>
+                    Image
+                </th>
+                <th>
+                    Type 1
+                </th>
+                <th>
+                    Type 2
+                </th>
+                <th>
+                    Evolves from
+                </th>
+                <th>
+                    Evolves to
+                </th>
+                <th>
+                    Nickname
+                </th>
+                <th>
+                    Birthday
+                </th>
+            </tr>
+            <tr align="center">
+                <td>
+                    #202312375
+                </td>
+                <td>
+                    Gen 1
+                </td>
+                <td>
+                    Nathan
+                </td>
+                <td>
+                    <image width="100px" height="110px" src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/430870424_724196569867550_1737308638171263620_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGZOO9Qi9ELDxVFh7qzyEU-6IUPUHqNyr7ohQ9Qeo3Kvsn1jtFubXBphli98ero_DWbT5mpeOes8JZrW50ZQM6Z&_nc_ohc=L03MYL77G4QQ7kNvgFzPta5&_nc_ht=scontent-mnl1-2.xx&oh=00_AfAsKWWfNvQ6MmcSt8FdvrymyaxhxUKEAP-Tcqt6yXNfoA&oe=6640EEB0"></image>
+                </td>
+                <td bgcolor="pink" style="color:white">
+                    Fairy
+                </td>
+                <td bgcolor="grey" style="color:white">
+                    Ghost
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Natekatzu
+                </td>
+                <td>
+                    Nate
+                </td>
+                <td>
+                    03/20/2005
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0001
+                </td>
+                <td>
+                    Gen 1
+                </td>
+                <td>
+                    Bulbasaur
+                </td>
+                <td>
+                    <image src="https://archives.bulbagarden.net/media/upload/thumb/f/fb/0001Bulbasaur.png/70px-0001Bulbasaur.png"></image>
+                </td>
+                <td bgcolor="green" style="color:white">
+                    Grass
+                </td>
+                <td bgcolor="purple" style="color:white">
+                    Poison
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Ivysaur
+                </td>
+                <td>
+                    Bulbie
+                </td>
+                <td>
+                    03/20/2005
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0005
+                </td>
+                <td>
+                    Gen 1
+                </td>
+                <td>
+                    Charmeleon
+                </td>
+                <td>
+                    <image src="https://archives.bulbagarden.net/media/upload/thumb/0/05/0005Charmeleon.png/70px-0005Charmeleon.png"></image>
+                </td>
+                <td bgcolor="red" style="color:white" colspan="2">
+                    Fire
+                </td>
+                <td>
+                    Charmander
+                </td>
+                <td>
+                    Charizard
+                </td>
+                <td>
+                    Charmie
+                </td>
+                <td>
+                    03/20/2005
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0005
+                </td>
+                <td>
+                    Gen 1
+                </td>
+                <td>
+                    Charizard
+                </td>
+                <td>
+                    <image src="https://archives.bulbagarden.net/media/upload/thumb/3/38/0006Charizard.png/70px-0006Charizard.png"></image>
+                </td>
+                <td bgcolor="red" style="color:white">
+                    Fire
+                </td>
+                <td bgcolor="lightblue" style="color:white">
+                    Flying
+                </td>
+                <td>
+                    Charmeleon
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Chariz
+                </td>
+                <td>
+                    03/20/2005
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0013
+                </td>
+                <td>
+                    Gen 1
+                </td>
+                <td>
+                    Weedle
+                </td>
+                <td>
+                    <image src="https://archives.bulbagarden.net/media/upload/thumb/3/36/0013Weedle.png/70px-0013Weedle.png"></image>
+                </td>
+                <td bgcolor="#91A119" style="color:white">
+                    Bug
+                </td>
+                <td bgcolor="purple" style="color:white">
+                    Poison
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Kakuna
+                </td>
+                <td>
+                    Weedie
+                </td>
+                <td>
+                    03/20/2005
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0014
+                </td>
+                <td>
+                    Gen 1
+                </td>
+                <td>
+                    Kakuna
+                </td>
+                <td>
+                    <image src="https://archives.bulbagarden.net/media/upload/thumb/f/f3/0014Kakuna.png/70px-0014Kakuna.png"></image>
+                </td>
+                <td bgcolor="#91A119" style="color:white">
+                    Bug
+                </td>
+                <td bgcolor="purple" style="color:white">
+                    Poison
+                </td>
+                <td>
+                    Weedle
+                </td>
+                <td>
+                    Beedrill
+                </td>
+                <td>
+                    Kaks
+                </td>
+                <td>
+                    03/20/2005
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0015
+                </td>
+                <td>
+                    Gen 1
+                </td>
+                <td>
+                    Beedrill
+                </td>
+                <td>
+                    <image src="https://archives.bulbagarden.net/media/upload/thumb/f/f7/0015Beedrill.png/70px-0015Beedrill.png"></image>
+                </td>
+                <td bgcolor="#91A119" style="color:white">
+                    Bug
+                </td>
+                <td bgcolor="purple" style="color:white">
+                    Poison
+                </td>
+                <td>
+                    Kakuna
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Beedie
+                </td>
+                <td>
+                    03/20/2005
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0027
+                </td>
+                <td>
+                    Gen 1
+                </td>
+                <td>
+                    Sandshrew
+                </td>
+                <td>
+                    <image src="https://archives.bulbagarden.net/media/upload/thumb/e/e9/0027Sandshrew.png/70px-0027Sandshrew.png"></image>
+                </td>
+                <td bgcolor="brown" style="color:white" colspan="2">
+                    Ground
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Sandslash
+                </td>
+                <td>
+                    Sandshroom
+                </td>
+                <td>
+                    03/20/2005
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0028
+                </td>
+                <td>
+                    Gen 1
+                </td>
+                <td>
+                    Sandslash
+                </td>
+                <td>
+                    <image src="https://archives.bulbagarden.net/media/upload/thumb/e/e9/0027Sandshrew.png/70px-0027Sandshrew.png"></image>
+                </td>
+                <td bgcolor="brown" style="color:white" colspan="2">
+                    Ground
+                </td>
+                <td>
+                    Sandshrew
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Slasher
+                </td>
+                <td>
+                    03/20/2005
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0029
+                </td>
+                <td>
+                    Gen 1
+                </td>
+                <td>
+                    Nidoran
+                </td>
+                <td>
+                    <image src="https://archives.bulbagarden.net/media/upload/thumb/b/b2/0029Nidoran.png/70px-0029Nidoran.png"></image>
+                </td>
+                <td bgcolor="purple" style="color:white" colspan="2">
+                    Poison
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Nidorina
+                </td>
+                <td>
+                    GirlRat
+                </td>
+                <td>
+                    03/20/2005
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0030
+                </td>
+                <td>
+                    Gen 1
+                </td>
+                <td>
+                    Nidorina
+                </td>
+                <td>
+                    <image src="https://archives.bulbagarden.net/media/upload/thumb/e/ea/0030Nidorina.png/70px-0030Nidorina.png"></image>
+                </td>
+                <td bgcolor="purple" style="color:white" colspan="2">
+                    Poison
+                </td>
+                <td>
+                    Nidoran
+                </td>
+                <td>
+                    Nidoqueen
+                </td>
+                <td>
+                    Slayyyy
+                </td>
+                <td>
+                    03/20/2005
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
