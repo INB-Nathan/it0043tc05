@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("BACKGROUND.webp");
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 950px;
+  }
+
+  .card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  .card h2 {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .types {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .type {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .grass { background-color: #78C850; }
+  .poison { background-color: #A040A0; }
+  .fire { background-color: #F08030; }
+  .water { background-color: #6890F0; }
+  .electric { background-color: #F8D030; }
+  .flying { background-color: #A890F0; }
+  .psychic { background-color: #F85888; }
+  .normal { background-color: #A8A878; }
+
+  .card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .card button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .add { background-color: #4CAF50; color: white; }
+  .release { background-color: #f44336; color: white; }
+
+  .card button:hover {
+    opacity: 0.8;
+  }
