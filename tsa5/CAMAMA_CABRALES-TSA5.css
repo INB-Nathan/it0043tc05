@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: rgb(19, 102, 19);
+}
+
+.dbz-container {
+    background-image: url("background.png");
+    background-position: center;
+    width: 97vw;
+    border: 10px solid rgb(104, 68, 21);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+}
+
+.item {
+    justify-content: start;
+    align-items: center;
+    border: 5px solid rgb(116, 80, 39);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 150px;
+    padding: px;
+}
+.details{
+    text-align: center;
+}
+.desc {
+    padding: 5px;
+    text-align: justify;
+}
+
+.name-race {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#steve .desc, #villager .desc{
+    padding: 15px;
+}
+#steve .details, #villager .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.name {
+    font-size: 1.5rem;
+}
+
+.race {
+    font-size: 1.2rem;
+}
+
+#steve {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    background-color: rgba(51,37,18,255);
+}
+
+#alex{
+    grid-column: 3;
+    grid-row: 1;
+    background-color: #e58e44;
+}
+
+#creeper{
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #395932;
+}
+
+#enderman{
+    grid-column: 4;
+    grid-row: 1 / 4;
+    background-color: #3d2044;
+}
+
+#villager{
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    background-color: #754236;
+}
+
+@media (max-width: 1200px){
+    .name-race{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #steve {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #alex{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    #creeper{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #enderman{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    #villager{
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        display: inline-block;
+    }
+    #steve .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+    #steve .desc{
+        padding: 5px;
+    }
+}
+
+@media (max-width: 800px){
+
+    #steve {
+        grid-column: 1;
+        grid-row: 1;
+        align-items: space-between;
+    }
+    
+    #alex{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #creeper{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    #enderman{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    #villager{
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #enderman .details, #creeper .details, #steve .details, #alex .details, #villager .details{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 10px;
+    }
+    #villager .desc{
+        padding: 5px;
+    }
+}
