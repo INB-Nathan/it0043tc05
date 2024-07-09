@@ -1,20 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CabralesCreates </title>
-    <link rel="stylesheet" href="CABRALES_FINALS.css">
-</head>
-<body>
-    <main class="wrapper">
-        <div class="ciao-frames">
-          <div class="frame" id="one"></div>
-          <div class="frame" id="two"></div>
-          <div class="frame" id="three"></div>
-          <div class="frame" id="four"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CabralesCreates</title>
+    <!--================== CSS ====================-->
+    <link rel="stylesheet" href="CABRALES_FINALS.css" />
+    <link rel="stylesheet" href="CABRALES_MEDIAQUERIES.css" />
+  </head>
+  <body>
+    <!--================== NAV ====================-->
+    <nav id="desktop-nav">
+      <div class="logo"><img src="LOGO.png" alt="" id="logo-img" /></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><img src="LOGO.png" alt="" id="logo-img" /></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </main>
-      
-</body>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!--================== HOME ====================-->
+
+    <section id="home">
+      <div class="section-containerimg">
+        <img src="myface.jpg" alt="Profile Picture" />
+      </div>
+      <div class="section-text">
+        <p class="section-p1">Hello, I am</p>
+        <h1 class="title">CabralesCreates</h1>
+        <p class="section-p2">an IT Student, Specializing in Cybersecurity</p>
+        <div class="btn-container">
+          <button class="btn-color-2" onclick="window.open('')">
+            Download Resume
+          </button>
+          <button class="btn-color-1" onclick="location.href='./#contact'">
+            Contacts
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linked-in-logo.jpg"
+            alt="linkedin"
+            class="icons"
+            onclick="location.href='https://www.linkedin.com/in/nathan-josua-cabrales-2344652b5/'"
+          />
+          <img
+            src="GitHub_logo.png"
+            alt="github"
+            class="icons"
+            onclick="location.href='https://github.com/INB-Nathan'"
+          />
+          <img
+            src="briefcase.png"
+            alt="briefcase"
+            class="icons"
+            onclick="location.href='https://edith.feutech.edu.ph/briefcase/profile'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+        <p class="section-p1">
+            Who is
+        </p>
+        <h1 class="title">
+            CabralesCreates
+        </h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="" alt="experience"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>8 months <br/> IT Student</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="" alt="education"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>FEU Institute of Technology <br/> Bachelor of Science in Information Technology Specialized in Cybersecurity</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatibus delectus quibusdam eligendi voluptas, in fuga, nobis, debitis repudiandae minus vero tempore suscipit ullam. Cumque esse quo voluptas porro? Voluptatem nulla doloremque, aliquid impedit, nemo delectus ducimus optio, libero at quo accusamus odit unde est. Repellendus mollitia nostrum nisi sunt!</p>
+                </div>
+            </div>
+        </div>
+        <img src="" alt="arrow">
+    </section>
+
+    <!--================== footer ====================-->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="reserved">
+        Copyright &#169; 2024 CabralesCreate. All Rights Reserved.
+      </p>
+    </footer>
+    <!--=========== JAVA SCRIPT =============-->
+    <script src="CABRALES_FINALS.js"></script>
+  </body>
 </html>
