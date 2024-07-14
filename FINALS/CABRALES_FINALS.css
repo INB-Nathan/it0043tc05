@@ -2,7 +2,7 @@
 
 @font-face{
     font-family: TITLE;
-    src: url(./assets/Fonts/Regular.ttf);
+    src: url(./assets/Fonts/Fit\ Regular.ttf);
 }
 
 
@@ -227,7 +227,7 @@ section {
 
 .icons{
     cursor: pointer;
-    height: 2rem;
+    height: 3rem;
 }
 
 .icons:disabled {
@@ -341,11 +341,63 @@ section {
 /* ABOUT SECTION */
 
 #about{
-    display: flex;
-    justify-content: center;
-    height: 80vh;
+    position: relative;
+    
 }
 
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.about-containers, .about-details-container {
+    display: flex;
+
+}
+
+.about-pic{
+    border-radius: 2rem;
+    height: 400px;
+}
+
+.icon-arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+    height: 50px;
+    width: fit-content;
+}
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2.5rem;
+    border: black 0.2rem solid;
+    text-align: center;
+}
+
+.icon{
+    height:5rem;
+}
+
+.section-container {
+    gap: 3rem;
+    height: 80%;
+}
+
+.section-pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
 /* FOOTER */
 
 .reserved {
