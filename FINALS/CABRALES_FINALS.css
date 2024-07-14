@@ -2,13 +2,9 @@
 
 @font-face{
     font-family: TITLE;
-    src: url(Fit\ Regular.ttf);
+    src: url(./assets/Fonts/Regular.ttf);
 }
 
-@font-face{
-    font-family: Coffee Spark;
-    src: url(Coffee\ Spark.ttf);
-}
 
 /* GENERAL */
 * {
@@ -56,7 +52,6 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 2rem;
-    font-family: 'Coffee Spark';
 }
 
 a {
@@ -118,7 +113,6 @@ a:hover {
     color: rgb(234, 245, 135);
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    font-family: 'Coffee Spark';
 }
 
 .menu-links li{
