@@ -21,6 +21,15 @@ html {
     scroll-behavior: smooth;
 }
 
+.logo {
+    font-size: 5rem;
+    font-weight: 10;
+    text-align: center;
+    font-family: 'TITLE';
+    color: pink;
+    text-shadow: black 4px 4px 4px;
+}
+
 p {
     color: rgb(85,85,85);
 }
@@ -37,21 +46,35 @@ nav, .nav-links {
     display: flex;
 }
 
+#desktop-nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    background: var(black);
+    transition: all 0.5s ease;
+}
+
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
-    background-color: rgb(0, 0, 0);
+    height: 12vh;
+    background-color: rgb(29, 27, 27);
+    backdrop-filter: blur(50px);
+    transition: all 0.5s ease;
+    
 }
 
-#logo-img {
-    height: 12vh;
-}
 
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 a {
@@ -70,6 +93,16 @@ a:hover {
 
 #hamburger-nav{
     display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    background: var(black);
+    transition: all 0.5s ease;
 }
 
 .hamburger-menu{
@@ -150,8 +183,8 @@ a:hover {
 /* SECTIONS */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
+    padding-top: 25vh;
+    height: 100vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -159,7 +192,6 @@ section {
 
 .section-container{
     display: flex;
-
 }
 
 /* HOME SECTION */
@@ -398,7 +430,55 @@ section {
     width: 400px;
     margin: auto 0;
 }
+
+/* Experience */
+
+#skills {
+    position:relative;
+}
+
+.skills-subtitle {
+    color: rgb(85,85,85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.skills-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 7.5rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon{
+    cursor: default;
+}
+
+.checkmark {
+    height: 2rem;
+}
+
 /* FOOTER */
+
+footer{
+    margin-top: 30vh;
+}
 
 .reserved {
     background-color: rgb(0, 0, 0);
