@@ -376,6 +376,10 @@ section {
   position: relative;
 }
 
+.text-container {
+    text-align: justify;
+}
+
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
@@ -550,8 +554,14 @@ article .icon {
 
 .email-icon {
   height: 3rem;
-  width: 3rem;
+  width: fit-content;
+  padding: 5px;
 }
+
+.gangstervegas {
+    color: black;
+}
+
 
 /* FOOTER */
 
